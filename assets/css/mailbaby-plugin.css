@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.image-column {
+    flex: 40%;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+}
+
+.form-column {
+    flex: 60%;
+    padding-left: 20px;
+}
+
+.form-column h2 {
+    margin-top: 0;
+}
+
+.form-column form {
+    margin-top: 20px;
+}
+
+.form-column input[type="text"],
+.form-column input[type="email"],
+.form-column input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-column input[type="submit"] {
+    background-color: #95bea5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-column input[type="submit"]:hover {
+    background-color: #09ff69;
+}
+
+.form-column .thank-you {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 9999; /* Ensure the form appears above other content */
+}
+
+
+@media only screen and (max-width: 550px) {
+    .image-column {
+        display: none;
+    }
+    
+  }
+
+  #close-form-btn {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: transparent;
+    border: none;
+    color: #95bea5; /* Adjust color as needed */
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    z-index: 9999; /* Ensure it appears above other elements */
+}
+
+#close-form-btn:hover {
+    color: #09ff69; /* Adjust hover color as needed */
+}
